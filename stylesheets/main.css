@@ -1,0 +1,204 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/main.scss */
+.widget {
+  display: flex;
+  flex-direction: row;
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #458cab;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #458cab 0%, #458cab 100%);
+  /* FF3.6-15 */
+  padding-bottom: 15px;
+}
+
+/* line 21, ../sass/main.scss */
+.id {
+  display: flex;
+  flex-direction: column;
+  flex: 0 90px;
+  position: relative;
+  border-top: 20px solid;
+}
+
+/* line 29, ../sass/main.scss */
+.id::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 34px;
+  background-color: #5f6264;
+  border-top: 0px solid;
+  z-index: 0;
+}
+
+/* line 39, ../sass/main.scss */
+.id-match {
+  padding-top: 3px;
+  padding-left: 15px;
+  border-left: 20px solid;
+  background-color: #faec6a;
+  min-height: 15px;
+  font-size: 100%;
+}
+
+/* line 48, ../sass/main.scss */
+.id-minute {
+  background-color: #286829;
+  background: linear-gradient(to right, #286829 0%, #41a400 100%);
+  color: #b2e899;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 0px;
+}
+
+/* line 59, ../sass/main.scss */
+.id-match::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border: 10px solid #000003;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  top: 0;
+  left: 10px;
+}
+
+/* line 72, ../sass/main.scss */
+img {
+  width: 16px;
+}
+
+/* line 76, ../sass/main.scss */
+.clock {
+  letter-spacing: -1px;
+}
+
+/* line 80, ../sass/main.scss */
+.game {
+  display: flex;
+  flex-direction: column;
+  background-color: #faec6a;
+  flex: auto;
+  border-top: 20px solid #222423;
+}
+
+/* line 92, ../sass/main.scss */
+.host,
+.gest {
+  background-color: #faec6a;
+  display: flex;
+}
+
+/* line 98, ../sass/main.scss */
+.host-1,
+.gest-1 {
+  flex: 1 0 auto;
+  background-color: #faec6a;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 107, ../sass/main.scss */
+.host-1,
+.host-match,
+.host-final {
+  padding-top: 4px;
+}
+
+/* line 113, ../sass/main.scss */
+.host-match,
+.gest-match {
+  background-color: #faec6a;
+  font-weight: bold;
+  letter-spacing: 15px;
+}
+
+/* line 120, ../sass/main.scss */
+.host-final,
+.gest-final {
+  color: #e2f4fa;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #1e7fb1;
+  font-weight: bold;
+}
+
+/* line 129, ../sass/main.scss */
+.gest-final {
+  border-bottom: 4px solid #1e7fb1;
+}
